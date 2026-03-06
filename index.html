@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>65 & 55 ans — Invitation</title>
+  <meta name="description" content="Invitation au double anniversaire de Sylvie et Isabel." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <div class="bg-orb orb-1"></div>
+  <div class="bg-orb orb-2"></div>
+  <div class="bg-orb orb-3"></div>
+
+  <main class="page-shell">
+    <section class="hero glass reveal">
+      <div class="hero-media">
+        <div class="hero-chip-row">
+          <span class="chip">Invitation</span>
+          <span class="eyebrow">Double anniversaire</span>
+        </div>
+
+        <div class="hero-visual">
+          <div class="hero-main-visual">
+            <figure class="photo-card main-photo floating-a">
+              <img src="assets/photo-couple.jpg" alt="Sylvie et Isabel" />
+            </figure>
+          </div>
+
+          <div class="hero-support-row">
+            <figure class="photo-card support-card video-card floating-c">
+              <video src="assets/runaway.mp4" autoplay muted loop playsinline preload="metadata"></video>
+            </figure>
+
+            <figure class="photo-card support-card floating-d">
+              <img src="assets/photo-annees-70.png" alt="Photo souvenir années 70" />
+            </figure>
+          </div>
+        </div>
+
+        <div class="signature-badge">Sylvie &amp; Isabel</div>
+      </div>
+
+      <div class="hero-content">
+        <div class="date-pill">
+          <span class="dot"></span>
+          <span>Samedi 2 mai 2026</span>
+        </div>
+
+        <h1>65 <span>&amp;</span> 55 ans</h1>
+        <p class="hero-subtitle">Deux anniversaires, une belle occasion de se retrouver</p>
+
+        <div class="hero-text">
+          <p class="intro-line">Depuis le temps que nous en parlions… voilà, c’est enfin officiel&nbsp;!</p>
+          <p><strong>65 et 55 ans, ça s’arrose&nbsp;!</strong></p>
+          <p>
+            Alors nous voulions vous avoir à nos côtés pour fêter cet événement et partager ensemble
+            une journée pleine de bonne humeur.
+          </p>
+        </div>
+
+        <div class="theme-highlight">
+          <span class="theme-label">Dress code</span>
+          <p>À cette occasion, nous serons déguisés en <strong>années 70</strong>… et vous&nbsp;?</p>
+        </div>
+
+        <div class="info-grid compact">
+          <article class="info-card">
+            <span>Date</span>
+            <strong>Samedi 2 mai</strong>
+          </article>
+          <article class="info-card">
+            <span>Heure</span>
+            <strong>À partir de midi</strong>
+          </article>
+          <article class="info-card">
+            <span>Lieu</span>
+            <strong>Saint-Amé</strong>
+          </article>
+        </div>
+
+        <div class="hero-actions">
+          <a id="rsvpButtonTop" class="btn btn-primary" href="#reponse">Je confirme ma présence</a>
+          <a class="btn btn-secondary" href="#infos">Voir les informations</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-grid">
+      <article class="glass card reveal">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Le mot d’invitation</p>
+            <h2>Un moment à partager</h2>
+          </div>
+        </div>
+
+        <div class="invitation-text">
+          <p>Depuis le temps que nous en parlions… voilà, c’est enfin officiel&nbsp;!</p>
+          <p>
+            Nous vous donnons rendez-vous le <strong>samedi 2 mai à partir de midi</strong>,
+            au <strong>8 rue du Neuf Pré à Saint-Amé</strong>, pour célébrer ensemble ces
+            <strong>65 et 55 ans</strong> comme il se doit.
+          </p>
+          <p>
+            Nous serions très heureux de vous avoir à nos côtés pour partager cette belle journée,
+            placée sous le signe de la convivialité, des retrouvailles et de la fête.
+          </p>
+          <p>À cette occasion, nous serons déguisés en <strong>années 70</strong>… et vous&nbsp;?</p>
+          <p>
+            On vous attend avec grand plaisir, et on compte sur vous pour venir faire de cette occasion
+            un moment inoubliable.
+          </p>
+          <p class="signature">On vous embrasse,<br><strong>Sylvie &amp; Isabel</strong></p>
+        </div>
+      </article>
+
+      <div class="side-stack">
+        <article id="infos" class="glass card reveal">
+          <p class="eyebrow">Infos pratiques</p>
+          <h2>Toutes les informations</h2>
+
+          <div class="info-grid large">
+            <article class="info-card">
+              <span>Date</span>
+              <strong>Samedi 2 mai 2026</strong>
+            </article>
+            <article class="info-card">
+              <span>Heure</span>
+              <strong>À partir de midi</strong>
+            </article>
+            <article class="info-card">
+              <span>Adresse</span>
+              <strong>8 rue du Neuf Pré<br>88120 Saint-Amé</strong>
+            </article>
+          </div>
+        </article>
+
+        <article id="reponse" class="glass card accent reveal">
+          <p class="eyebrow gold">Réponse</p>
+          <h2>Merci de confirmer</h2>
+          <p>Le bouton ci-dessous peut ouvrir directement un mail de réponse.</p>
+          <div class="deadline">Merci de confirmer votre présence avant le <strong>15 avril</strong></div>
+          <a id="rsvpButtonBottom" class="btn btn-light" href="#">Répondre à l’invitation</a>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
