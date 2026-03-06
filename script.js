@@ -31,4 +31,41 @@
   }, { threshold: 0.1 });
 
   document.querySelectorAll('.reveal').forEach((el) => observer.observe(el));
+
+
+  const dressToggle = document.getElementById('dressToggle');
+  const dressPanel = document.getElementById('dressPanel');
+  const dressClose = document.getElementById('dressClose');
+
+  function setDressPanelState(isOpen) {
+    if (!dressToggle || !dressPanel) return;
+    dressToggle.setAttribute('aria-expanded', String(isOpen));
+    dressPanel.setAttribute('aria-hidden', String(!isOpen));
+    dressPanel.classList.toggle('is-open', isOpen);
+  }
+
+  if (dressToggle && dressPanel) {
+    dressToggle.addEventListener('click', () => {
+      const isOpen = dressPanel.classList.contains('is-open');
+      setDressPanelState(!isOpen);
+    });
+
+    if (dressClose) {
+      dressClose.addEventListener('click', () => setDressPanelState(false));
+    }
+
+    document.addEventListener('keydown', (event) => {
+      if (event.key === 'Escape') setDressPanelState(false);
+    });
+
+    document.addEventListener('click', (event) => {
+      if (!dressPanel.classList.contains('is-open')) return;
+      const clickedInsidePanel = dressPanel.contains(event.target);
+      const clickedToggle = dressToggle.contains(event.target);
+      if (!clickedInsidePanel && !clickedToggle) {
+        setDressPanelState(false);
+      }
+    });
+  }
+
 })();
